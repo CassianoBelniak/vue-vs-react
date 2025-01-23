@@ -4,6 +4,7 @@ import { create } from 'zustand'
 interface CitiesState {
     cities: City[]
     addCity: (city: City) => void
+    removeCity: (city: City) => void
 }
 
 const useCities = create<CitiesState>(set => ({

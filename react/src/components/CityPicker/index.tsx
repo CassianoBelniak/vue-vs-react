@@ -30,7 +30,7 @@ export default function CityPicker() {
                 disablePortal
                 options={foundCities}
                 getOptionLabel={option => option.name}
-                sx={{ width: 300 }}
+                sx={{ width: '100%' }}
                 filterOptions={x => x}
                 renderInput={params => (
                     <TextField

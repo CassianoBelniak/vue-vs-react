@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import 'leaflet/dist/leaflet.css'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
