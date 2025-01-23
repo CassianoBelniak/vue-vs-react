@@ -12,6 +12,10 @@ const useCities = create<CitiesState>(set => ({
         set(state => ({
             cities: [...state.cities.filter(filteredCity => filteredCity.id_city !== city.id_city), city],
         })),
+    removeCity: (city: City) =>
+        set(state => ({
+            cities: state.cities.filter(filteredCity => filteredCity.id_city !== city.id_city),
+        })),
 }))
 
 export default useCities
